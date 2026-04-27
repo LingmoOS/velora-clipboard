@@ -1,0 +1,17 @@
+[Unit]
+Description=Deepin Clipboard
+
+Requisite=dde-session-core.target
+After=dde-session-core.target
+
+PartOf=dde-session-initialized.target
+Before=dde-session-initialized.target
+StartLimitBurst=3
+
+[Service]
+Type=dbus
+BusName=org.deepin.dde.Clipboard1
+ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/dde-clipboard
+Slice=session.slice
+Restart=always
+RestartSec=3s
