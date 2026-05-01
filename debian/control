@@ -1,7 +1,7 @@
-Source: dde-clipboard
+Source: velora-clipboard
 Section: admin
 Priority: optional
-Maintainer: Deepin Sysdev <sysdev@deepin.com>
+Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends:
  debhelper-compat (= 13),
  cmake,
@@ -28,7 +28,7 @@ Build-Depends:
  qtchooser,
  libsystemd-dev,
 Standards-Version: 4.6.2
-Homepage: https://github.com/linuxdeepin/dde-clipboard
+Homepage: https://github.com/LingmoOS/velora-clipboard
 
 Package: dde-clipboard
 Architecture: any
