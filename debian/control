@@ -5,7 +5,7 @@ Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends:
  debhelper-compat (= 13),
  cmake,
- dde-tray-loader-dev (>= 0.0.11),
+ velora-tray-loader-dev (>= 0.0.11),
  extra-cmake-modules,
  libdde-shell-dev,
  libdtk6core-bin,

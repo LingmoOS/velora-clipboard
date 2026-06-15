@@ -1,3 +1,12 @@
+velora-clipboard (1:6.1.30.lingmo.1) unstable; urgency=medium
+
+  * replace dde-tray-loader-dev with velora-tray-loader-dev
+  * update Debian packaging build dependencies
+  * replace dde-tray-loader-dev with velora-tray-loader-dev
+  * align dependency definitions with current project requirements
+
+ -- Lingmo OS Team <team@lingmo.org>  Tue, 16 Jun 2026 00:06:00 +0800
+
 velora-clipboard (1:6.1.27.lingmo.1) unstable; urgency=medium
 
   * new release for Lingmo OS.
