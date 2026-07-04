@@ -1,4 +1,4 @@
-velora-clipboard (1:6.1.30.lingmo.1) unstable; urgency=medium
+velora-clipboard (1:6.1.30.lingmo.12) unstable; urgency=medium
 
   * replace dde-tray-loader-dev with velora-tray-loader-dev
   * update Debian packaging build dependencies
