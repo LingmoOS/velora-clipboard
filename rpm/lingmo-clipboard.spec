@@ -8,12 +8,12 @@
 %global debug_package   %{nil}
 %endif
 
-Name:           dde-clipboard
+Name:           lingmo-clipboard
 Version:        5.3.15
 Release:        1
 Summary:        Qt platform theme integration plugins for DDE
 License:        GPLv3+
-URL:            http://shuttle.corp.deepin.com/cache/repos/eagle/release-candidate/RERFNS4wLjAuNjU3NQ/pool/main/d/dde-clipboard/
+URL:            http://shuttle.corp.deepin.com/cache/repos/eagle/release-candidate/RERFNS4wLjAuNjU3NQ/pool/main/d/lingmo-clipboard/
 Source0:        %{name}_%{version}.orig.tar.xz
 
 

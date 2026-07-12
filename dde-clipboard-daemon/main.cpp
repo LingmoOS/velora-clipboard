@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     DLogManager::registerConsoleAppender();
     DLogManager::registerFileAppender();
 
-    const QString interface = "org.deepin.dde.daemon.Clipboard1";
+    const QString interface = "org.lingmo.daemon.Clipboard1";
     const QString path = "/org/deepin/dde/daemon/Clipboard1";
     if (!QDBusConnection::sessionBus().registerService(interface)) {
         qWarning() << "DBus register failed, error message:" << QDBusConnection::sessionBus().lastError().message();

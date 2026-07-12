@@ -34,9 +34,9 @@ class QPushButton;
 class QPropertyAnimation;
 class QSequentialAnimationGroup;
 
-using DBusDisplay = org::deepin::dde::Display1;
-using DisplayMonitor = org::deepin::dde::display1::Monitor;
-using DBusDaemonDock = org::deepin::dde::daemon::Dock1;
+using DBusDisplay = org::lingmo::Display1;
+using DisplayMonitor = org::lingmo::display1::Monitor;
+using DBusDaemonDock = org::lingmo::daemon::Dock1;
 
 /*!
  * \~chinese \class MainWindow

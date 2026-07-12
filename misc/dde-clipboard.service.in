@@ -10,7 +10,7 @@ StartLimitBurst=3
 
 [Service]
 Type=dbus
-BusName=org.deepin.dde.Clipboard1
+BusName=org.lingmo.Clipboard1
 ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/dde-clipboard
 Slice=session.slice
 Restart=always

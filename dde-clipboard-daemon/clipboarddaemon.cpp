@@ -14,11 +14,11 @@ ClipboardDaemon::ClipboardDaemon(QObject *parent)
     : QObject(parent)
 {
     QDBusConnection connection = QDBusConnection::sessionBus();
-    if (!connection.registerService("org.deepin.dde.ClipboardLoader1")) {
+    if (!connection.registerService("org.lingmo.ClipboardLoader1")) {
         qInfo() << "error:" << connection.lastError().message();
     }
 
     ClipboardLoader *clipboardLoader = new ClipboardLoader(this);
-    connection.registerObject("/org/deepin/dde/ClipboardLoader1", clipboardLoader,
+    connection.registerObject("/org/lingmo/ClipboardLoader1", clipboardLoader,
                               QDBusConnection::ExportAllSlots | QDBusConnection::ExportAllSignals);
 }

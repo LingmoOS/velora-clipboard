@@ -23,7 +23,7 @@
 class ClipboardLoader : public QObject
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "org.deepin.dde.ClipboardLoader1")
+    Q_CLASSINFO("D-Bus Interface", "org.lingmo.ClipboardLoader1")
 
 public:
     explicit ClipboardLoader(QObject *parent = nullptr);

@@ -41,8 +41,8 @@ static QColor innerBorderColor = QColor(255, 255, 255, static_cast<int>(0.2 * 25
 
 MainWindow::MainWindow(QWidget *parent)
     : DBlurEffectWidget(parent)
-    , m_displayInter(new DBusDisplay("org.deepin.dde.Display1", "/org/deepin/dde/Display1", QDBusConnection::sessionBus(), this))
-    , m_daemonDockInter(new DBusDaemonDock("org.deepin.dde.daemon.Dock1", "/org/deepin/dde/daemon/Dock1", QDBusConnection::sessionBus(), this))
+    , m_displayInter(new DBusDisplay("org.lingmo.Display1", "/org/lingmo/Display1", QDBusConnection::sessionBus(), this))
+    , m_daemonDockInter(new DBusDaemonDock("org.lingmo.daemon.Dock1", "/org/lingmo/daemon/Dock1", QDBusConnection::sessionBus(), this))
     , m_appearanceInter(new DDBusInterface(AppearanceService, AppearancePath, AppearanceInterface, QDBusConnection::sessionBus(), this))
     , m_regionMonitor(nullptr)
     , m_content(new DWidget(parent))

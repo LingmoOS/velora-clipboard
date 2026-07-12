@@ -24,7 +24,7 @@ public:
 
     void toggle()
     {
-        QDBusInterface interface("org.deepin.dde.Clipboard1",
+        QDBusInterface interface("org.lingmo.Clipboard1",
                                  "/org/deepin/dde/Clipboard1",
                                  "org.deepin.dde.Clipboard1",
                                  QDBusConnection::sessionBus());

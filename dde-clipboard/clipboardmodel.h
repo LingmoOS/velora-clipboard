@@ -11,7 +11,7 @@
 #include "itemdata.h"
 #include "dbus/clipboardloaderinterface.h"
 
-using ClipboardLoader = com::deepin::dde::ClipboardLoader;
+using ClipboardLoader = com::lingmo::ClipboardLoader;
 /*!
  * \~chinese \class ClipboardModel
  * \~chinese \brief 继承于QAbstractListModel,这个类定义了用于views和delegates访问数据的接口。

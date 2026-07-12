@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
         w.setAlwaysShow(true);
     }
 
-    QDBusInterface interface("org.deepin.dde.ClipboardLoader1", "/org/deepin/dde/ClipboardLoader1",
+    QDBusInterface interface("org.lingmo.ClipboardLoader1", "/org/lingmo/ClipboardLoader1",
                                  "org.deepin.dde.ClipboardLoader1",
                                  QDBusConnection::sessionBus());
 

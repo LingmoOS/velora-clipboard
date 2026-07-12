@@ -64,7 +64,7 @@ void ClipboardPlugin::init(PluginProxyInterface *proxyInter)
     connect(m_quickPanelWidget, &QuickPanelWidget::requestHideApplet, this, [this] {
         m_proxyInter->requestSetAppletVisible(this, CLIPBOARD_KEY, false);
     });
-    QDBusConnection::sessionBus().connect("org.deepin.dde.Clipboard1", "/org/deepin/dde/Clipboard1", "org.deepin.dde.Clipboard1", "clipboardVisibleChanged", this, SLOT(onClipboardVisibleChanged(bool)));
+    QDBusConnection::sessionBus().connect("org.lingmo.Clipboard1", "/org/lingmo/Clipboard1", "org.lingmo.Clipboard1", "clipboardVisibleChanged", this, SLOT(onClipboardVisibleChanged(bool)));
 }
 
 QWidget *ClipboardPlugin::itemWidget(const QString &itemKey)
@@ -134,7 +134,7 @@ void ClipboardPlugin::refreshIcon(const QString &itemKey)
 const QString ClipboardPlugin::itemCommand(const QString &itemKey)
 {
     Q_UNUSED(itemKey);
-    return QString("dbus-send --session --print-reply --dest=org.deepin.dde.Clipboard1 /org/deepin/dde/Clipboard1 org.deepin.dde.Clipboard1.Toggle");
+    return QString("dbus-send --session --print-reply --dest=org.lingmo.Clipboard1 /org/lingmo/Clipboard1 org.lingmo.Clipboard1.Toggle");
 }
 
 void ClipboardPlugin::onClipboardVisibleChanged(bool visible)

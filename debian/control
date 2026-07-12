@@ -1,13 +1,13 @@
-Source: velora-clipboard
+Source: lingmo-clipboard
 Section: admin
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends:
  debhelper-compat (= 13),
  cmake,
- velora-tray-loader-dev (>= 0.0.11),
+ lingmo-tray-loader-dev (>= 0.0.11),
  extra-cmake-modules,
- libdde-shell-dev,
+ liblingmo-shell-dev,
  libdtk6core-bin,
  libdtk6core-dev,
  libdtk6gui-dev,
@@ -28,19 +28,19 @@ Build-Depends:
  qtchooser,
  libsystemd-dev,
 Standards-Version: 4.6.2
-Homepage: https://github.com/LingmoOS/velora-clipboard
+Homepage: https://github.com/LingmoOS/lingmo-clipboard
 
-Package: dde-clipboard
+Package: lingmo-clipboard
 Architecture: any
 Depends:
- dde-api (>=2.92.1),
- dde-daemon (>=6.1.26),
- dde-session (>=1.1.5),
+ lingmo-api (>=2.92.1),
+ lingmo-daemon (>=6.1.26),
+ lingmo-session (>=1.1.5),
  ${misc:Depends},
  ${shlibs:Depends},
 Breaks:
- dde-shell (<< 1.99.3),
+ lingmo-shell (<< 1.99.3),
 Replaces:
- dde-shell (<< 1.99.3),
+ lingmo-shell (<< 1.99.3),
 Description: deepin desktop-environment - clipboard module
  Clipboard module of deepin desktop-environment
